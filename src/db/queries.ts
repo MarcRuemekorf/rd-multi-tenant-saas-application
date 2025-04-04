@@ -1,5 +1,5 @@
 import { db } from "./index"
-import { users, tenants } from "./schema"
+import { users } from "./schema"
 import { eq } from "drizzle-orm"
 
 export async function getUserByEmail(email: string) {

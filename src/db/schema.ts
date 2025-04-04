@@ -1,4 +1,4 @@
-import { pgTable, varchar, timestamp, primaryKey } from "drizzle-orm/pg-core";
+import { pgTable, varchar, timestamp } from "drizzle-orm/pg-core";
 
 export const tenants = pgTable("tenants", {
     id: varchar("id", { length: 36 }).primaryKey(),
