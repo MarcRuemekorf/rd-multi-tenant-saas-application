@@ -33,6 +33,7 @@ export const authOptions: NextAuthOptions = {
             return token;
         },
         async session({ session, token }) {
+            console.log("Token", token);
             // if (token.tenantId) {
             //     session.user.tenantId = token.tenantId as string
             // }
